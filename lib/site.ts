@@ -14,7 +14,7 @@ export const ABACUS_STORAGE_KEY = "usa-abacus-day";
 export const PARTS_ORIGIN = "https://car-parts-cpang.vercel.app";
 
 export const BRITISH_MOTORS_URL = "https://british-motors.vercel.app";
-export const BOND_ARCHIVE_URL = "https://bond-archive.vercel.app";
+export const BOND_ARCHIVE_URL = "https://bond-archive-two.vercel.app";
 export const FF_ARCHIVE_URL = "https://ff-archive.vercel.app";
 export const MI_ARCHIVE_URL = "https://mi-archive.vercel.app";
 
