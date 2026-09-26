@@ -7,7 +7,7 @@ import { MI_ARCHIVE_URL, pageMetadata, SITE_URL } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "분노의 질주 차량",
-  description: "분노의 질주 시리즈에 나온 미국 차를 ff-archive 항목과 이 카탈로그의 모델 페이지로 연결한 색인.",
+  description: "이 카탈로그에 있는 미국 브랜드 기준으로 분노의 질주 시리즈와 연결된 차를 모은 색인.",
   path: "/furious-cars",
 });
 
@@ -41,8 +41,8 @@ export default function FuriousPage() {
         <p className="mb-2 text-xs tracking-[0.2em] text-accent uppercase">Fast & Furious</p>
         <h1 className="font-serif text-3xl font-semibold tracking-tight md:text-4xl">분노의 질주 차량</h1>
         <p className="mt-4 leading-relaxed text-muted">
-          카탈로그의 본편은 브랜드와 모델입니다. 여기 목록은 분노의 질주 아카이브에 등재된 미국 차만 모은 색인입니다.
-          각 항목은 해당 아카이브 페이지로 이어지고, 우리 카탈로그에 같은 네임플레이트가 있으면 모델 페이지도 붙입니다.
+          이 카탈로그에 있는 미국 브랜드 기준으로, 분노의 질주 시리즈와 연결된 차를 모았습니다.
+          각 항목은 분노의 질주 아카이브의 해당 주소로 이어지고, 우리 모델 페이지도 붙입니다.
         </p>
       </header>
       <ul className="space-y-4">

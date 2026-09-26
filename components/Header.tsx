@@ -13,6 +13,7 @@ const NAV: NavItem[] = [
   { href: "/brands", label: "브랜드" },
   { href: "/cars", label: "모델" },
   { href: "/furious-cars", label: "분노의 질주" },
+  { href: "/movie-cars", label: "영화 속 미국차" },
   { href: BRITISH_MOTORS_URL, label: "영국차", external: true },
   { href: partsHref("header"), label: "자동차용품", external: true },
 ];

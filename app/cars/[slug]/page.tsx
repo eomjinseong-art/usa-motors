@@ -5,6 +5,7 @@ import { CarVisual } from "@/components/CarVisual";
 import { JsonLd } from "@/components/JsonLd";
 import { PartsCta } from "@/components/PartsCta";
 import { filmsForModel } from "@/data/films";
+import { moviesForModel } from "@/data/movies";
 import { CATEGORIES } from "@/lib/types";
 import { brandBySlug, getImage, modelBySlug, models, relatedModels } from "@/lib/catalog";
 import { pageMetadata, SITE_URL } from "@/lib/site";
@@ -33,6 +34,7 @@ export default async function ModelPage({ params }: { params: Promise<Params> })
   const brand = brandBySlug(model.brand);
   const image = getImage(model.slug);
   const films = filmsForModel(model.slug);
+  const movies = moviesForModel(model.slug);
   const related = relatedModels(model);
   const categoryLabels = model.categories
     .map((id) => CATEGORIES.find((item) => item.id === id)?.label)
@@ -144,7 +146,7 @@ export default async function ModelPage({ params }: { params: Promise<Params> })
         <section className="mt-10 rounded-2xl border border-line bg-card p-5">
           <p className="text-xs tracking-[0.18em] text-accent uppercase">Screen</p>
           <h2 className="mt-1 font-serif text-xl">분노의 질주 기록</h2>
-          <p className="mt-2 text-sm text-muted">이 네임플레이트가 분노의 질주 아카이브에 등재된 경우만 적습니다.</p>
+          <p className="mt-2 text-sm text-muted">이 카탈로그에 있는 미국 브랜드 기준으로 분노의 질주와 연결된 기록입니다.</p>
           <ul className="mt-3 space-y-2 text-sm">
             {films.map((film) => (
               <li key={film.ffSlug}>
@@ -157,6 +159,26 @@ export default async function ModelPage({ params }: { params: Promise<Params> })
                   {film.titleKo}
                 </a>
                 <span className="text-muted"> — {film.note}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+      {movies.length ? (
+        <section className="mt-10 rounded-2xl border border-line bg-card p-5">
+          <p className="text-xs tracking-[0.18em] text-accent uppercase">Screen</p>
+          <h2 className="mt-1 font-serif text-xl">영화 속 등장</h2>
+          <ul className="mt-3 space-y-3 text-sm">
+            {movies.map((movie) => (
+              <li key={movie.id}>
+                <Link href={`/movie-cars#${movie.id}`} className="text-accent hover:underline">
+                  {movie.filmKo} ({movie.year}
+                  {movie.medium === "TV 시리즈" ? ", TV 시리즈" : ""})
+                </Link>
+                <span className="text-muted">
+                  {" "}
+                  — {movie.carKo}. {movie.driver}. {movie.note}
+                </span>
               </li>
             ))}
           </ul>

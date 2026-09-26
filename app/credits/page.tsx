@@ -1,3 +1,4 @@
+import { movieImageRows } from "@/data/movies";
 import { brands, getImage, models } from "@/lib/catalog";
 import { pageMetadata } from "@/lib/site";
 import type { WikiImage } from "@/lib/types";
@@ -17,6 +18,9 @@ export default function CreditsPage() {
   for (const model of models) {
     const image = getImage(model.slug);
     if (image) rows.push({ slug: model.slug, label: model.nameKo, image });
+  }
+  for (const row of movieImageRows()) {
+    rows.push({ slug: row.id, label: row.label, image: row.image });
   }
 
   return (
