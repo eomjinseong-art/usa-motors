@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { VisitorCounter } from "@/components/VisitorCounter";
-import { BOND_ARCHIVE_URL, BRITISH_MOTORS_URL, partsHref, SITE_NAME } from "@/lib/site";
+import { BRITISH_MOTORS_URL, partsHref, SITE_NAME } from "@/lib/site";
 
 type NavItem = { href: string; label: string; external?: boolean };
 
@@ -14,7 +14,6 @@ const NAV: NavItem[] = [
   { href: "/cars", label: "모델" },
   { href: "/furious-cars", label: "분노의 질주" },
   { href: BRITISH_MOTORS_URL, label: "영국차", external: true },
-  { href: BOND_ARCHIVE_URL, label: "007", external: true },
   { href: partsHref("header"), label: "자동차용품", external: true },
 ];
 
