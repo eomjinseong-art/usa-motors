@@ -1,4 +1,5 @@
 import { brands } from "@/data/brands";
+import { movieCars } from "@/data/movies";
 import { generationsBySlug } from "@/data/generations";
 import { chevroletModels } from "@/data/models/chevrolet";
 import { fordModels } from "@/data/models/ford";
@@ -103,6 +104,19 @@ export function searchCatalog(query: string) {
         subtitle: `${brand?.nameKo ?? ""} · ${model.years}`,
         href: `/cars/${model.slug}`,
         kind: "모델",
+        keywords: hay,
+      });
+    }
+  }
+
+  for (const car of movieCars) {
+    const hay = `${car.filmKo} ${car.filmEn} ${car.carKo} ${car.carEn} ${car.driver} ${car.note}`.toLowerCase();
+    if (hay.includes(needle)) {
+      hits.push({
+        title: `${car.filmKo} · ${car.carKo}`,
+        subtitle: `${car.year} · ${car.medium}`,
+        href: `/movie-cars#${car.id}`,
+        kind: "영화",
         keywords: hay,
       });
     }

@@ -36,6 +36,9 @@ export function Footer() {
             <Link href="/furious-cars" className="hover:text-accent">
               분노의 질주
             </Link>
+            <Link href="/movie-cars" className="hover:text-accent">
+              영화 속 미국차
+            </Link>
             <Link href="/credits" className="hover:text-accent">
               사진 크레딧
             </Link>

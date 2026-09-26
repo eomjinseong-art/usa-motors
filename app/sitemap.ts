@@ -4,7 +4,7 @@ import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const staticPaths = ["", "/brands", "/cars", "/furious-cars", "/parts", "/credits"];
+  const staticPaths = ["", "/brands", "/cars", "/furious-cars", "/movie-cars", "/parts", "/credits"];
   const brandPaths = brands.map((brand) => `/brands/${brand.slug}`);
   const modelPaths = models.map((model) => `/cars/${model.slug}`);
   const generationPaths = models.flatMap((model) =>
