@@ -1,3 +1,4 @@
+import { CoupangBanner } from "@/components/CoupangBanner";
 import Link from "next/link";
 import { PartsCta } from "@/components/PartsCta";
 import {
@@ -19,6 +20,7 @@ const ARCHIVE_LINKS = [
 export function Footer() {
   return (
     <footer className="mt-16 border-t border-line">
+      <CoupangBanner />
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[1.4fr_1fr]">
         <div>
           <p className="font-serif text-lg">{SITE_NAME}</p>
