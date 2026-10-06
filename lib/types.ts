@@ -19,6 +19,13 @@ export type Generation = {
   points: string[];
 };
 
+export type ModelVideo = {
+  /** Verified YouTube video ID. */
+  videoId: string;
+  title: string;
+  channel: string;
+};
+
 export type Model = {
   slug: string;
   brand: string;
@@ -33,6 +40,7 @@ export type Model = {
   sources: { label: string; href: string }[];
   imageQuery: string;
   generations?: Generation[];
+  video?: ModelVideo;
 };
 
 export type Brand = {
