@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { CarVisual } from "@/components/CarVisual";
 import { JsonLd } from "@/components/JsonLd";
 import { PartsCta } from "@/components/PartsCta";
+import { YoutubeLink } from "@/components/YoutubeLink";
 import { filmsForModel } from "@/data/films";
 import { moviesForModel } from "@/data/movies";
 import { CATEGORIES } from "@/lib/types";
@@ -98,6 +99,7 @@ export default async function ModelPage({ params }: { params: Promise<Params> })
       ) : (
         <CarVisual name={model.nameKo} body={model.body} categories={model.categories} />
       )}
+      <YoutubeLink video={model.video} fallbackQuery={`${model.nameEn} review`} />
       <p className="mt-8 max-w-3xl text-base leading-relaxed">{model.summary}</p>
       <section className="mt-10">
         <h2 className="font-serif text-xl">제원</h2>

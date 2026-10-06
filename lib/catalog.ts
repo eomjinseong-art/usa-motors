@@ -1,6 +1,7 @@
 import { brands } from "@/data/brands";
 import { movieCars } from "@/data/movies";
 import { generationsBySlug } from "@/data/generations";
+import { modelVideos } from "@/data/youtube";
 import { chevroletModels } from "@/data/models/chevrolet";
 import { fordModels } from "@/data/models/ford";
 import { luxuryModels } from "@/data/models/luxury";
@@ -23,6 +24,8 @@ export const models: Model[] = rawModels.map((raw) => {
   const model = toModel(raw);
   const generations = generationsBySlug[model.slug];
   if (generations) model.generations = generations;
+  const video = modelVideos[model.slug];
+  if (video) model.video = video;
   return model;
 });
 
