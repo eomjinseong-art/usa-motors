@@ -10,6 +10,7 @@ import { moviesForModel } from "@/data/movies";
 import { CATEGORIES } from "@/lib/types";
 import { brandBySlug, getImage, modelBySlug, models, relatedModels } from "@/lib/catalog";
 import { pageMetadata, SITE_URL } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 type Params = { slug: string };
 
@@ -125,6 +126,7 @@ export default async function ModelPage({ params }: { params: Promise<Params> })
           ))}
         </div>
       </section>
+      <CoupangCard />
       {model.generations?.length ? (
         <section className="mt-10">
           <h2 className="font-serif text-xl">세대</h2>
