@@ -4,6 +4,7 @@ import { PartsCta } from "@/components/PartsCta";
 import { JsonLd } from "@/components/JsonLd";
 import { brands, featuredModels, getImage, models } from "@/lib/catalog";
 import { pageMetadata, SITE_DESCRIPTION, SITE_NAME, SITE_NAME_KO, SITE_URL } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 export const metadata = pageMetadata({
   title: SITE_NAME_KO,
@@ -59,6 +60,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <CoupangCard />
       <section className="mt-14">
         <div className="mb-6 flex items-end justify-between gap-4">
           <div>
