@@ -149,6 +149,19 @@ export const movieCars: ScreenCar[] = [
     modelSlug: "ford-thunderbird",
     source: { label: "Wikipedia — Thelma & Louise", href: "https://en.wikipedia.org/wiki/Thelma_%26_Louise" },
   },
+  {
+    id: "blacklight-challenger-hellcat",
+    filmKo: "블랙라이트",
+    filmEn: "Blacklight",
+    year: 2022,
+    medium: "영화",
+    carKo: "2019 닷지 챌린저 SRT 헬캣 레드아이 와이드보디",
+    carEn: "2019 Dodge Challenger SRT Hellcat Redeye Widebody",
+    driver: "트래비스 블록",
+    note: "FBI의 비공식 해결사 트래비스 블록(리암 니슨)의 차로, 영화의 메인 차량이다. IMCDb는 2019년형 헬캣 레드아이로 등재했고, 그래나이트 크리스털 메탈릭 외장의 와이드보디다. 하이라이트는 도심 한낮 교통 속에서 쓰레기 수거 트럭을 쫓는 추격전으로, 워싱턴 D.C. 배경이지만 호주 캔버라 시내에서 촬영됐다. 화면상 배지가 제거돼 있어 일반 헬캣인지 레드아이인지는 리뷰 매체도 확언하지 못한다(전해지는 이야기).",
+    modelSlug: "dodge-challenger",
+    source: { label: "IMCDb — Blacklight (2022)", href: "https://www.imcdb.org/v001621229.html" },
+  },
 ];
 
 export function moviesForModel(modelSlug: string) {
