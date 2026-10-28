@@ -183,4 +183,6 @@ export const modelVideos: Record<string, ModelVideo> = {
   "oldsmobile-jetfire": { videoId: "EpoRB-3wOu0", title: "First Turbocharged Car: 1962 Oldsmobile Jetfire | Jay Leno's Garage", channel: "Jay Leno's Garage" },
   "oldsmobile-vista-cruiser": { videoId: "7t4fkrkfW0c", title: "The Genius of the Oldsmobile Vista Cruiser", channel: "This Old Car" },
   "oldsmobile-omega": { videoId: "U8IoX_K__Sk", title: "Most Infamous Cars in Automotive History: The GM X Car - 1984 Oldsmobile Omega Brougham", channel: "Rare Classic Cars & Automotive History" },
+  "buick-electra-e7-2027": { videoId: "l4vxb5Ml1ec", title: "All New 2026 Buick Electra Zhijing E7 REEV", channel: "AutoWorld" },
+  "tesla-roadster-2gen-2028": { videoId: "ctx4YBEdOxo", title: "Let's Talk About Tesla Roadster 2020!", channel: "Marques Brownlee" },
 };

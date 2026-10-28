@@ -868,6 +868,33 @@ export const luxuryModels: RawModel[] = [
     imageQuery: "Buick Park Avenue",
   },
   {
+    slug: "buick-electra-e7-2027",
+    brand: "buick",
+    nameKo: "뷰익 일렉트라 E7",
+    nameEn: "Buick Electra E7",
+    years: "2027– (2026 사전예약)",
+    body: "5인승 플러그인 하이브리드 SUV",
+    categories: ["suv", "ev"],
+    summary: "뷰익 일렉트라 서브브랜드의 5인승 중형 PHEV SUV. 1.5L 플러그인 하이브리드와 급속 충전·실외 V2L을 갖추고 2026년 가을 한국 사전예약으로 데뷔했다.",
+    editorial: [
+      "일렉트라 E7은 뷰익의 전동화 서브브랜드 ‘일렉트라(Electra)’ 이름으로 선보이는 5인승 플러그인 하이브리드(PHEV) SUV다. 순수 EV 주행 모드와 DC 급속 충전, 실외 V2L(외부 전원 공급) 기능을 함께 지원한다.",
+      "한국 시장에서는 2026년 9월 30일부터 10월 31일까지 사전예약을 진행하고 11월 4–5일 본계약 사전오픈에 들어가는 일정으로 공식 공개되었다.",
+    ],
+    specs: [
+      ["동력", "1.5L 플러그인 하이브리드(PHEV)"],
+      ["좌석·차체", "5인승 중형 SUV"],
+      ["주요 기능", "EV 주행 모드, 급속 충전, 실외 V2L 지원"],
+      ["한국 일정", "사전예약 2026-09-30~10-31 / 본계약 사전오픈 11-04~05"],
+    ],
+    sources: [
+      W("뷰익 코리아 — 공식 사이트", "https://www.buickkorea.co.kr/"),
+      W("뷰익 코리아 — Upcoming Electra E7", "https://www.buickkorea.co.kr/campaign/upcoming-electra-e7.gm"),
+      W("뷰익 코리아 — Electra E7 사전예약", "https://www.buickkorea.co.kr/campaign/preorder.gm"),
+      W("Chesscarworld — 뷰익 일렉트라 E7 한국 사전예약 정리", "https://chesscarworld.blogspot.com/2026/10/buick-electra-e7-korea.html"),
+    ],
+    imageQuery: "Buick Electra E5",
+  },
+  {
     slug: "gmc-sierra",
     brand: "gmc",
     nameKo: "GMC 시에라",
