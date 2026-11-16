@@ -6,12 +6,14 @@ import {
   BRITISH_MOTORS_URL,
   FF_ARCHIVE_URL,
   MI_ARCHIVE_URL,
+  NADOO_GARAGE_URL,
   partsHref,
   SITE_NAME,
 } from "@/lib/site";
 
 const ARCHIVE_LINKS = [
   { href: BRITISH_MOTORS_URL, label: "영국차 아카이브" },
+  { href: NADOO_GARAGE_URL, label: "나두카&모터사이클" },
   { href: BOND_ARCHIVE_URL, label: "007 아카이브" },
   { href: FF_ARCHIVE_URL, label: "분노의 질주 아카이브" },
   { href: MI_ARCHIVE_URL, label: "미션 임파서블 아카이브" },
