@@ -5,6 +5,7 @@ import { ModelCard } from "@/components/ModelCard";
 import { CATEGORIES } from "@/lib/types";
 import { brands, filterModels, getImage, models } from "@/lib/catalog";
 import { pageMetadata, SITE_URL } from "@/lib/site";
+import { CoupangCard } from "@/components/CoupangCard";
 
 type Search = { brand?: string; category?: string };
 
@@ -86,11 +87,24 @@ export default async function CarsPage({ searchParams }: { searchParams: Promise
       {list.length === 0 ? (
         <p className="text-sm text-muted">이 조건에 해당하는 모델이 없습니다.</p>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {list.map((model) => (
-            <ModelCard key={model.slug} model={model} image={getImage(model.slug)} />
-          ))}
-        </div>
+        (() => {
+          const mid = Math.min(9, Math.max(1, Math.floor(list.length / 2)));
+          return (
+            <>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {list.slice(0, mid).map((model) => (
+                  <ModelCard key={model.slug} model={model} image={getImage(model.slug)} />
+                ))}
+              </div>
+              <CoupangCard />
+              <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {list.slice(mid).map((model) => (
+                  <ModelCard key={model.slug} model={model} image={getImage(model.slug)} />
+                ))}
+              </div>
+            </>
+          );
+        })()
       )}
     </main>
   );

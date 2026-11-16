@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_NAME_KO, SITE_URL } from "@/lib/site";
 import "./globals.css";
+import { CoupangSticky } from "@/components/CoupangSticky";
 
 const sans = Noto_Sans_KR({
   subsets: ["latin"],
@@ -64,6 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <CoupangSticky />
       </body>
     </html>
   );
