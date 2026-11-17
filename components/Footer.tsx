@@ -5,6 +5,7 @@ import {
   BOND_ARCHIVE_URL,
   BRITISH_MOTORS_URL,
   FF_ARCHIVE_URL,
+  JOHNWICK_ARCHIVE_URL,
   MI_ARCHIVE_URL,
   NADOO_GARAGE_URL,
   partsHref,
@@ -17,6 +18,7 @@ const ARCHIVE_LINKS = [
   { href: BOND_ARCHIVE_URL, label: "007 아카이브" },
   { href: FF_ARCHIVE_URL, label: "분노의 질주 아카이브" },
   { href: MI_ARCHIVE_URL, label: "미션 임파서블 아카이브" },
+  { href: JOHNWICK_ARCHIVE_URL, label: "존 윅 아카이브" },
 ];
 
 export function Footer() {
