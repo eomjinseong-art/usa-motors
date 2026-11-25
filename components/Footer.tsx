@@ -6,6 +6,7 @@ import {
   BRITISH_MOTORS_URL,
   FF_ARCHIVE_URL,
   JOHNWICK_ARCHIVE_URL,
+  LONGRENT_GUIDE_URL,
   MI_ARCHIVE_URL,
   NADOO_GARAGE_URL,
   partsHref,
@@ -13,6 +14,7 @@ import {
 } from "@/lib/site";
 
 const ARCHIVE_LINKS = [
+  { href: LONGRENT_GUIDE_URL, label: "장기렌트 비교노트" },
   { href: BRITISH_MOTORS_URL, label: "영국차 아카이브" },
   { href: NADOO_GARAGE_URL, label: "나두카&모터사이클" },
   { href: BOND_ARCHIVE_URL, label: "007 아카이브" },
