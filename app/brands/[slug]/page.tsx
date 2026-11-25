@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -87,6 +88,7 @@ export default async function BrandPage({ params }: { params: Promise<Params> })
           <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
+      <NadooAd inline />
       <section className="mt-12">
         <h2 className="font-serif text-2xl">모델</h2>
         <p className="mt-1 text-sm text-muted">클래식부터 현행 네임플레이트까지.</p>

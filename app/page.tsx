@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { ModelCard } from "@/components/ModelCard";
 import { PartsCta } from "@/components/PartsCta";
@@ -93,6 +94,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <NadooAd inline />
       <section className="mt-14">
         <h2 className="font-serif text-2xl">먼저 볼 모델</h2>
         <p className="mt-1 text-sm text-muted">카탈로그에서 먼저 열어 보기 좋은 네임플레이트입니다.</p>
