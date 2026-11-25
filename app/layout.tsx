@@ -39,11 +39,13 @@ export const metadata: Metadata = {
     title: `${SITE_NAME} — ${SITE_NAME_KO}`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} — ${SITE_NAME_KO}`,
     description: SITE_DESCRIPTION,
+    images: ["/opengraph-image"],
   },
   verification: {
     google: "LglMaYLzS6dacAPQ5ZgZdPgzdtfLbp_1Rk5vh3WNPlM",

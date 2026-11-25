@@ -57,11 +57,13 @@ export function pageMetadata({
       siteName: SITE_NAME,
       locale: "ko_KR",
       type: "website",
+      images: ["/opengraph-image"],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ["/opengraph-image"],
     },
   };
 }
