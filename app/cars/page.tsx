@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
@@ -74,6 +75,7 @@ export default async function CarsPage({ searchParams }: { searchParams: Promise
           </Link>
         ))}
       </nav>
+      <NadooAd inline />
       <nav className="mb-8 flex flex-wrap gap-2" aria-label="차종 필터">
         <Link href={href(brand, undefined)} className={chip(!category)}>
           모든 차종

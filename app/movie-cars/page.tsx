@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { PartsCta } from "@/components/PartsCta";
@@ -98,6 +99,7 @@ export default function MovieCarsPage() {
           );
         })}
       </ul>
+      <NadooAd inline />
       <div className="mt-8 max-w-xl">
         <PartsCta campaign="movie-cars" />
       </div>

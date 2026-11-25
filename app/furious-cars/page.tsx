@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { PartsCta } from "@/components/PartsCta";
@@ -71,6 +72,7 @@ export default function FuriousPage() {
           );
         })}
       </ul>
+      <NadooAd inline />
       <section className="mt-14 rounded-2xl border border-line bg-card p-6">
         <h2 className="font-serif text-xl">미션 임파서블 아카이브의 미국 차</h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">

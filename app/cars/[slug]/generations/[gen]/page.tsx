@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -62,6 +63,7 @@ export default async function GenerationPage({ params }: { params: Promise<Param
         </p>
       </header>
       <p className="max-w-3xl text-base leading-relaxed">{generation.summary}</p>
+      <NadooAd inline />
       <section className="mt-8 max-w-3xl">
         <h2 className="font-serif text-xl">이 세대에서 확인할 수 있는 점</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-relaxed">

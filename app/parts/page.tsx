@@ -1,3 +1,4 @@
+import { NadooAd } from "@/components/NadooAd";
 import { PartsCta } from "@/components/PartsCta";
 import { pageMetadata, partsHref } from "@/lib/site";
 
@@ -18,6 +19,7 @@ export default function PartsPage() {
         </p>
       </header>
       <PartsCta campaign="parts" className="max-w-xl" />
+      <NadooAd inline />
       <p className="mt-6 text-sm">
         <a href={partsHref("parts-text")} className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
           오토픽스 열기
